@@ -37,7 +37,7 @@ A kernel-based root solution for Android devices, forked from [`tiann/KernelSU`]
 ## Installation
 
 ```sh
-curl -LSs ‘https://raw.githubusercontent.com/MrDeath404/SukiSU-Ultra-SuSFS/refs/heads/main/kernel/setup.sh’ | bash -s main
+curl -LSs 'https://raw.githubusercontent.com/MrDeath404/SukiSU-Ultra-SuSFS/refs/heads/main/kernel/setup.sh' | bash -s main
 ```
 
 See [`guide/installation.md`](guide/installation.md)
