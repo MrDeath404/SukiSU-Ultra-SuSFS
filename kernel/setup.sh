@@ -65,8 +65,9 @@ setup_kernelsu() {
     # Add default configs
     ln -sf "$KERNEL_ROOT/KernelSU/kernel/sukisu.config" "$KERNEL_ROOT/arch/arm64/configs/sukisu.config"
     ln -sf "$KERNEL_ROOT/KernelSU/kernel/susfs.config" "$KERNEL_ROOT/arch/arm64/configs/susfs.config"
-    echo "Include sukisu.config and susfs.config located at $KERNEL_ROOT/arch/arm64/configs to include SukiSU-Ultra and susfs"
-    echo "Those are only recommended configs to build but you can edit them at own risk"
+    echo "[+] Include sukisu.config and susfs.config located at $KERNEL_ROOT/arch/arm64/configs to include SukiSU-Ultra and susfs"
+    echo "[+] Those are only recommended configs to build but you can edit them at own risk"
+    echo "[!] Before compiling make sure you added susfs into the kernel (read https://gitlab.com/simonpunk/susfs4ksu for more info)"
     echo '[+] Done.'
 }
 
