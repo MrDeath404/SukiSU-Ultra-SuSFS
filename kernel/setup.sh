@@ -61,6 +61,12 @@ setup_kernelsu() {
     # Add entries in Makefile and Kconfig if not already existing
     grep -q "kernelsu" "$DRIVER_MAKEFILE" || echo 'obj-$(CONFIG_KSU) += kernelsu/' >> "$DRIVER_MAKEFILE" && echo "[+] Modified Makefile."
     grep -q 'source "drivers/kernelsu/Kconfig"' "$DRIVER_KCONFIG" || sed -i '/endmenu/i\source "drivers/kernelsu/Kconfig"' "$DRIVER_KCONFIG" && echo "[+] Modified Kconfig."
+
+    # Add default configs
+    ln -sf "$KERNEL_ROOT/KernelSU/kernel/sukisu.config" "$KERNEL_ROOT/arch/arm64/configs/sukisu.config"
+    ln -sf "$KERNEL_ROOT/KernelSU/kernel/susfs.config" "$KERNEL_ROOT/arch/arm64/configs/susfs.config"
+    echo "Include sukisu.config and susfs.config located at $KERNEL_ROOT/arch/arm64/configs to include SukiSU-Ultra and susfs"
+    echo "Those are only recommended configs to build but you can edit them at own risk"
     echo '[+] Done.'
 }
 
