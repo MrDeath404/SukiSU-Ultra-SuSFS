@@ -30,7 +30,7 @@ Prerequisite: An open-source, bootable kernel.
 curl -LSs ‘https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh’ | bash -s main
 ```
 
-- Built-in Branch (for GKI/non-GKI builds, optional susfs support)
+- susfs
 ```sh
-curl -LSs ‘https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh’ | bash -s builtin
+curl -LSs ‘https://raw.githubusercontent.com/MrDeath404/SukiSU-Ultra-SuSFS/refs/heads/main/kernel/setup.sh’ | bash -s main
 ```
