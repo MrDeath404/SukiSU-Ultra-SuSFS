@@ -32,5 +32,5 @@ curl -LSs ‘https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/ke
 
 - susfs
 ```sh
-curl -LSs ‘https://raw.githubusercontent.com/MrDeath404/SukiSU-Ultra-SuSFS/refs/heads/main/kernel/setup.sh’ | bash -s main
+curl -LSs 'https://raw.githubusercontent.com/MrDeath404/SukiSU-Ultra-SuSFS/refs/heads/main/kernel/setup.sh' | bash -s main
 ```
