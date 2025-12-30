@@ -33,6 +33,14 @@ config KPM
     select KALLSYMS
     select KALLSYMS_ALL
 
+config TARGET_SELINUX_AVC_ERROR
+    bool "Fix SELinux avc error"
+    depends on KSU
+    default n
+    help
+      Fix SELinux AVC structure mismatch on kernels with backported AVC changes.
+      Enable this option to use the newer AVC and avoid compilation errors caused by incomplete SELinux backports.
+
 menu "KernelSU - SUSFS"
 config KSU_SUSFS
     bool "KernelSU addon - SUSFS"

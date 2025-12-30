@@ -1,0 +1,43 @@
+!<thin>
+//                                              278       `
+ksu.o/
+allowlist.o/
+app_profile.o/
+apk_sign.o/
+sucompat.o/
+throne_tracker.o/
+pkg_observer.o/
+setuid_hook.o/
+kernel_umount.o/
+supercalls.o/
+feature.o/
+ksud.o/
+seccomp_cache.o/
+file_wrapper.o/
+util.o/
+sulog.o/
+manual_su.o/
+selinux/selinux.o/
+selinux/sepolicy.o/
+selinux/rules.o/
+
+/0              0           0     0     644     23364     `
+/7              0           0     0     644     171140    `
+/20             0           0     0     644     419080    `
+/35             0           0     0     644     114872    `
+/47             0           0     0     644     374248    `
+/59             0           0     0     644     123576    `
+/77             0           0     0     644     111664    `
+/93             0           0     0     644     122572    `
+/108            0           0     0     644     112788    `
+/125            0           0     0     644     297336    `
+/139            0           0     0     644     14856     `
+/150            0           0     0     644     143520    `
+/158            0           0     0     644     270368    `
+/175            0           0     0     644     382916    `
+/191            0           0     0     644     114420    `
+/199            0           0     0     644     172804    `
+/208            0           0     0     644     151260    `
+/221            0           0     0     644     370908    `
+/240            0           0     0     644     50304     `
+/260            0           0     0     644     398064    `

@@ -149,7 +149,8 @@ static int get_object(char *buf, char __user *user_object, size_t buf_sz,
 
     return 0;
 }
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0))
+
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)) || defined(CONFIG_TARGET_SELINUX_AVC_ERROR)
 extern int avc_ss_reset(u32 seqno);
 #else
 extern int avc_ss_reset(struct selinux_avc *avc, u32 seqno);
@@ -157,7 +158,7 @@ extern int avc_ss_reset(struct selinux_avc *avc, u32 seqno);
 // reset avc cache table, otherwise the new rules will not take effect if already denied
 static void reset_avc_cache()
 {
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0))
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)) || defined(CONFIG_TARGET_SELINUX_AVC_ERROR)
     avc_ss_reset(0);
     selnl_notify_policyload(0);
     selinux_status_update_policyload(0);
